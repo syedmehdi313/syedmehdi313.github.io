@@ -1,0 +1,124 @@
+/* Import custom fonts */
+@font-face {
+  font-family: 'SerifBody';
+  src: url('serif-body.woff2') format('woff2'),
+       url('serif-body.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SansHeading';
+  src: url('sans-heading.woff2') format('woff2'),
+       url('sans-heading.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Apply global styles */
+body {
+  font-family: 'SerifBody', serif;
+  font-size: 10px;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'SansHeading', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 100px; /* Adjusted for fixed nav */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+/* Navigation menu - stays fixed at the top */
+nav {
+  background-color: #800000; /* Dark red */
+  padding: 15px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 50px;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation links */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+nav a:hover {
+  background-color: #600000;
+  border-radius: 5px;
+}
+
+/* Links */
+a {
+  color: #800000;
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: #600000;
+}
+
+a:active {
+  color: #400000;
+  font-weight: bold;
+}
+
+/* External link icon */
+a[href^="http"]:after {
+  content: " 🔗";
+  font-size: 0.9rem;
+}
+
+/* List styles */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  line-height: 1.8;
+  list-style-type: "➤ ";
+}
+
+/* Adjust first paragraph inside sections */
+section p:first-of-type {
+  text-indent: 20px;
+}

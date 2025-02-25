@@ -1,0 +1,64 @@
+/* Basic styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* Level 1 heading */
+h1 {
+    color: hotpink; /* Pink color */
+    font-size: 2em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border-bottom: 10px dotted purple; /* Dotted purple border */
+    padding-bottom: 10px;
+}
+
+/* Job title style */
+.job-title {
+    color: #999999;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Level 2 heading */
+h2 {
+    font-size: 1.5em;
+    font-style: italic; /* Italicized heading */
+}
+
+/* Contact details styling */
+ul {
+    list-style: none;
+    padding: 10px;
+    background-color: #eeeeee; /* Light gray background */
+    border: 5px solid purple; /* Purple border */
+}
+
+/* List item styling */
+li {
+    margin: 5px 0;
+}
+
+/* Link styles */
+a:link,
+a:visited {
+    color: #fb6542;
+}
+
+a:hover {
+    color: green; /* Green on hover */
+    text-decoration: none;
+}
+
